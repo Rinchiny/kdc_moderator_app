@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+spring:
+  security:
+    user:
+      name: user
+      password: user
+
+kdc:
+  rest-api:
+    base-url: 'http://localhost:8080/rest'
+    tasks:
+      moderation-url: '/task/status/new'
+      review-url: '/task/status/readyForReview'
